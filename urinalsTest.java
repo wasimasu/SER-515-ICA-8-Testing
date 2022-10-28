@@ -22,4 +22,11 @@ public class urinalsTest {
         urinals testcase = new urinals();
         assertEquals("File found and processed properly", testcase.readFile("urinals.dat"));
     }
+
+    @org.junit.jupiter.api.Test
+    void fileEmpty() {
+        urinals testcase = new urinals();
+        assertEquals("File is empty, please enter a valid file", testcase.readFile("emptyUrinals.dat"));
+
+    }
 }

@@ -55,6 +55,9 @@ public class urinals{
             File file = new File(f);
             Scanner scr = new Scanner(file);
             //String str = this.getOutputFileName();
+            if(file.length()==0){
+                return "File is empty, please enter a valid file";
+            }
             while (scr.hasNextLine()) {
                 String line = scr.nextLine();
                 int a = this.countUrinals(line);
