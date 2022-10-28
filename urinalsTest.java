@@ -29,4 +29,10 @@ public class urinalsTest {
         assertEquals("File is empty, please enter a valid file", testcase.readFile("emptyUrinals.dat"));
 
     }
+
+    //write file testcase
+    void outputfiletest(){
+        urinals testcase = new urinals();
+       assertEquals("I/O Exception!",testcase.writeToFile(1,"urinals22.dat"));
+    }
 }
